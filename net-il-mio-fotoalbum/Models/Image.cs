@@ -5,7 +5,7 @@ namespace net_il_mio_fotoalbum.Models
 {
     [Table("Images")]
     public class Image
-    {
+    { 
         [Key]
         public int Id { get; set; }
 
