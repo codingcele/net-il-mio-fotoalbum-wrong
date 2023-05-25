@@ -14,7 +14,7 @@ namespace net_il_mio_fotoalbum
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=localhost;Initial Catalog=fotoalbumDb;Integrated Security=True;TrustServerCertificate=True").LogTo(s => Debug.WriteLine(s));
+            optionsBuilder.UseSqlServer("Data Source=localhost;Initial Catalog=albumfotoDB;Integrated Security=True;TrustServerCertificate=True").LogTo(s => Debug.WriteLine(s));
         }
     }
 }

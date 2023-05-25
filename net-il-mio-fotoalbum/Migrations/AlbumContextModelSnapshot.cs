@@ -249,7 +249,7 @@ namespace net_il_mio_fotoalbum.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("net_il_mio_fotoalbum.Models.Image", b =>
@@ -273,7 +273,7 @@ namespace net_il_mio_fotoalbum.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Image");
+                    b.ToTable("Images");
                 });
 
             modelBuilder.Entity("CategoryImage", b =>

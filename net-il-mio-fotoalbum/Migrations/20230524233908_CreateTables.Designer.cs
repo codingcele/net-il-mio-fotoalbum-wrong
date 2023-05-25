@@ -12,8 +12,8 @@ using net_il_mio_fotoalbum;
 namespace net_il_mio_fotoalbum.Migrations
 {
     [DbContext(typeof(AlbumContext))]
-    [Migration("20230524163447_CreateIdentityTables")]
-    partial class CreateIdentityTables
+    [Migration("20230524233908_CreateTables")]
+    partial class CreateTables
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -252,7 +252,7 @@ namespace net_il_mio_fotoalbum.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("net_il_mio_fotoalbum.Models.Image", b =>
@@ -276,7 +276,7 @@ namespace net_il_mio_fotoalbum.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Image");
+                    b.ToTable("Images");
                 });
 
             modelBuilder.Entity("CategoryImage", b =>

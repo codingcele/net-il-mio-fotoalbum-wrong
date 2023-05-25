@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace net_il_mio_fotoalbum.Models
 {
-    [Table("Image")]
+    [Table("Images")]
     public class Image
     {
         [Key]
@@ -13,7 +13,8 @@ namespace net_il_mio_fotoalbum.Models
         public string Title { get; set; }
         public string? Description { get; set; }
 
+        [Required]
         public string Picture { get; set; }
-        public List<Category> Categories { get; set; }
+        public List<Category>? Categories { get; set; }
     }
 }
